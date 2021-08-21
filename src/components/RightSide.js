@@ -11,7 +11,7 @@ const RightSide = () => {
 
         <FeedList>
           <li>
-            <a>
+            <a href='/inwork'>
               <Avatar />
             </a>
             <div>
@@ -20,7 +20,7 @@ const RightSide = () => {
             </div>
           </li>
           <li>
-            <a>
+            <a href='/inwork'>
               <Avatar />
             </a>
             <div>

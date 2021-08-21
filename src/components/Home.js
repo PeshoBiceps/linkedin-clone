@@ -10,7 +10,7 @@ const Home = (props) => {
     <Container>
       {!props.user && <Redirect to='/' />}
       <Section>
-        <h5><a>Hiring in a hurry? -  </a></h5>
+        <h5><p>Hiring in a hurry? -  </p></h5>
         <p>Find talented pros in record time with Upwork and keep business moving.</p>
       </Section>
       <Layout>
@@ -23,22 +23,25 @@ const Home = (props) => {
 }
 
 const Container = styled.div`
-  padding-top: 52px; 
-  max-width: 100%;
+  padding-top: 52px;
+  margin: auto; 
+  max-width: 80%;
 `
 const Section = styled.div`
   min-height: 50px;
-  padding: 16px 0 ;
   box-sizing: content-box;
   text-align: center;
   text-decoration: underline;
   display: flex;
+  align-items: center;
   justify-content: center;
   h5{
       color: #0051ff;
       font-size: 14px;
-      a{
+      p{
           font-weight: 700;
+          margin: 0;
+          color: #0051ff;
       }
   }
   p{

@@ -31,6 +31,7 @@ const Main = (props) => {
     }
   };
 
+
   return (
     <>
       {props.articles.length === 0 ? (
@@ -80,7 +81,7 @@ const Main = (props) => {
               props.articles.map((article, key) => (
                 <Article key={key}>
                   <SharedActor>
-                    <a>
+                    <a href='/inwork'>
                       <img src={article.actor.image} alt="" />
                       <div>
                         <span>{article.actor.title}</span>
@@ -96,7 +97,7 @@ const Main = (props) => {
                   </SharedActor>
                   <Description>{article.description}</Description>
                   <SharedImg>
-                    <a>
+                    <a href='/inwork'>
                       {!article.sharedImg && article.video ? (
                         <ReactPlayer width={"100%"} url={article.video} />
                       ) : (
@@ -115,24 +116,24 @@ const Main = (props) => {
                       </button>
                     </li>
                     <li>
-                      <a>{article.comments}</a>
+                      <a href='/inwork'>{article.comments}</a>
                     </li>
                   </SocialCounts>
                   <SocialActions>
                     <button>
-                      <img src="/images/like-image.svg" />
+                      <img src="/images/like-image.svg" alt=""/>
                       <span>Like</span>
                     </button>
                     <button>
-                      <img src="/images/comments-icon.svg" />
+                      <img src="/images/comments-icon.svg" alt=""/>
                       <span>Comments</span>
                     </button>
                     <button>
-                      <img src="/images/share-icon.svg" />
+                      <img src="/images/share-icon.svg" alt=""/>
                       <span>Share</span>
                     </button>
                     <button>
-                      <img src="/images/send-icon.svg" />
+                      <img src="/images/send-icon.svg" alt=""/>
                       <span>Send</span>
                     </button>
                   </SocialActions>

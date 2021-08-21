@@ -12,7 +12,7 @@ function App(props) {
 
   useEffect(() => {
     props.getUserAuth();
-  }, [])
+  }, [props])
 
   return (
     <div>

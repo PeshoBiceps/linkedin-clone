@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { connect } from 'react-redux'
-import { signInAPI, signOutAPI } from '../actions'
+import { signOutAPI } from '../actions'
 
 const Header = (props) => {
 	return (
@@ -23,41 +23,41 @@ const Header = (props) => {
 				<Nav>
 					<NavListWrap>
 						<NavList className='active'>
-							<a>
+							<a href='/inwork'>
 								<img src="/images/nav-home.svg" alt="" />
 								<span>Home</span>
 							</a>
 						</NavList>
 						<NavList>
-							<a>
+							<a href='/inwork'>
 								<img src="/images/nav-network.svg" alt="" />
 								<span>My Network</span>
 							</a>
 						</NavList>
 
 						<NavList>
-							<a>
+							<a href='/inwork'>
 								<img src="/images/nav-jobs.svg" alt="" />
 								<span>Jobs</span>
 							</a>
 						</NavList>
 
 						<NavList>
-							<a>
+							<a href='/inwork'>
 								<img src="/images/nav-messaging.svg" alt="" />
 								<span>Messaging</span>
 							</a>
 						</NavList>
 
 						<NavList>
-							<a>
+							<a href='/inwork'>
 								<img src="/images/nav-notifications.svg" alt="" />
 								<span>Notifications</span>
 							</a>
 						</NavList>
 
 						<User>
-							<a>
+							<a href='/inwork'>
 								{props.user && props.user.photoURL ? (
 									<img src={props.user.photoURL} alt='' />
 								) : (
@@ -70,17 +70,17 @@ const Header = (props) => {
 							</a>
 
 							<SignOut onClick={() => props.signOut()}>
-								<a>Sign Out</a>
+								<a href='/'>Sign Out</a>
 							</SignOut>
 
 						</User>
 
 						<Work>
-							<a>
+							<a href='/inwork'>
 								<img src="/images/nav-work.svg" alt="" />
 								<span>
 									Work
-                  <img src="/images/down-icon.svg" alt="" />
+									<img src="/images/down-icon.svg" alt="" />
 								</span>
 							</a>
 						</Work>
@@ -219,7 +219,7 @@ const NavList = styled.li`
     }
 `
 const SignOut = styled.div`
-    position: absolute;
+    		position: absolute;
     top: 45px;
     background: white;
     border-radius: 0 0 5px 5px;

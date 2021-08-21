@@ -8,17 +8,17 @@ const LeftSide = (props) => {
 
         <UserInfo>
           <CardBackground />
-          <a>
+          <a href='/inwork'>
             <Photo />
             <Link>Welcome, {props.user ? props.user.displayName : 'there'}</Link>
           </a>
-          <a>
+          <a href='/inwork'>
             <AddPhotoText>Add a photo</AddPhotoText>
           </a>
         </UserInfo>
 
         <Widget>
-          <a>
+          <a href='/inwork'>
             <div>
               <span>Connections</span>
               <span>Grow your network</span>
@@ -34,19 +34,19 @@ const LeftSide = (props) => {
       </ArtCard>
 
       <CommunityCard>
-        <a>
+        <a href='/inwork'>
           <span>Groups</span>
         </a>
-        <a>
+        <a href='/inwork'>
           <span>
             Events
             <img src="/images/plus-icon.svg" alt="" />
           </span>
         </a>
-        <a>
+        <a href='/inwork'>
           <span>Follow Hashtags</span>
         </a>
-        <a>
+        <a href='/inwork'>
           <span>Discover more</span>
         </a>
       </CommunityCard>
