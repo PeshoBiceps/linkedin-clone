@@ -18,7 +18,6 @@ It was created with React, Redux, Firebase, Styled Components.
 
 ## Tech Stack
 
-- Webpack
 - React
 - Redux
 - Firebase
